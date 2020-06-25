@@ -1,22 +1,8 @@
-<h3>Comentarios: <?php comments_number( 'No hay comentarios.', 'Un comentario', '% comentarios' ); ?></h3>
+<div class="col ml-2">
+    <h3 class="h1">Comentarios: <?php comments_number( 'No hay comentarios.', 'Un comentario', '% comentarios' ); ?></h3>
+</div>
 <!-- Comments Form -->
 <?php comment_form(); ?>
-<!-- <div class="card my-4">
-    <h5 class="card-header">Deja un comentario:</h5>
-    <div class="card-body">
-        <form>
-            <div class="form-group">
-                <textarea
-                    class="form-control"
-                    rows="3"
-                ></textarea>
-            </div>
-            <button type="submit" class="btn btn-info">
-                Comentar
-            </button>
-        </form>
-    </div>
-</div> -->
 <!-- / Comments Form -->
 <?php 
     wp_list_comments(array(
