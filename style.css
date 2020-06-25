@@ -31,8 +31,14 @@ a:hover {
     color: var(--primary-color);
 }
 
+.navbar-toggler {
+    background-color: none;
+    border: none;
+}
 
-
+.navbar-toggler:focus {
+    outline: none;
+}
 /* category color */
 .badge > a {
     color: var(--category-color) !important;

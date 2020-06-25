@@ -10,7 +10,7 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="col">
                     <!-- Date && category -->
-                    <small class="text-muted"><?php the_time('j F, Y'); ?></small> / <small class="article-category">#<?php the_category(' '); ?></small>
+                    <small class="text-muted text-uppercase"><?php the_time('j F, Y'); ?></small> / <small class="text-uppercase">#<?php the_category(' '); ?></small>
                     <!-- / date -->
                     <!-- Post title -->
                     <h1 class="font-weight-bold mb-5">

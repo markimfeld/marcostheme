@@ -35,7 +35,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
-                        <div>
+                        <div class="text-uppercase">
                             <?php
                                 $user = wp_get_current_user();
                                 if ( $user ) :
@@ -44,7 +44,7 @@
                             <?php endif; ?>
                             <small class="text-muted"> <?php the_author(); ?></small>
                         </div>
-                        <small class="text-muted">
+                        <small class="text-muted text-uppercase">
                             <i class="fas fa-calendar-alt"></i> <?php the_time('j F, Y'); ?> 
                         </small>
                     </div>

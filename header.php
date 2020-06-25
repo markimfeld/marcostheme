@@ -41,7 +41,7 @@
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="fas fa-bars"></span>
                     </button>
                     
                     <?php
