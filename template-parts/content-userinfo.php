@@ -4,7 +4,9 @@
             $user = wp_get_current_user();
             if ( $user ) :
         ?>
+        <figure>
             <img class="rounded-sm rounded-circle" style="width: 100px;" src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+        </figure>
         <?php endif; ?>
     </div>
     <div class="col-8 col-md-9 col-lg-10 pl-0 pl-md-0">

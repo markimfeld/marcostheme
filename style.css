@@ -50,3 +50,8 @@ a:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+/* search form sidebar */
+.screen-reader-text {
+    display: none;
+}

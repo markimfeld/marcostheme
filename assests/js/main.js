@@ -1,39 +1,38 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
-const form_comment = $('#comment');
+const formComment = $('#comment');
 
-form_comment.addClass('form-control');
+formComment.addClass('form-control rounded-0');
 
-const submit_comment = $('#submit');
+const submitComment = $('#submit');
 
-submit_comment.addClass('btn btn-info');
+submitComment.addClass('btn btn-info rounded-0');
 
-const reply_title = $('#reply-title');
+const replyTitle = $('#reply-title');
 
-reply_title.addClass('card-header');
+replyTitle.addClass('card-header');
 
 const card = $('#respond').addClass('card-body');
 
-const form_group = $('.comment-form-comment').addClass('form-group');
+const formGroup = $('.comment-form-comment').addClass('form-group');
+
+const searchForm = document.querySelector('#searchform #s');
+searchForm.classList.add('form-control', 'rounded-0', 'mb-3');
+
+const searchSubmit = document.querySelector('#searchform #searchsubmit');
+searchSubmit.classList.add('btn', 'btn-info', 'btn-block', 'rounded-0');
+
+const sidebarRightUl = document.querySelectorAll('.sidebar-right ul');
+
+for( ul of sidebarRightUl) {
+    ul.classList.add('list-group');
+}
+
+const sidebarRightCategoriesLi = document.querySelectorAll('.sidebar-right ul li');
+for ( li of sidebarRightCategoriesLi) {
+    li.classList.remove('cat-item'); 
+    li.classList.add('list-group-item'); 
+}
 
 });
-
-
-
-{/* <div class="card my-4">
-    <h5 class="card-header">Deja un comentario:</h5>
-    <div class="card-body">
-        <form>
-            <div class="form-group">
-                <textarea
-                    class="form-control"
-                    rows="3"
-                ></textarea>
-            </div>
-            <button type="submit" class="btn btn-info">
-                Comentar
-            </button>
-        </form>
-    </div>
-</div> */}

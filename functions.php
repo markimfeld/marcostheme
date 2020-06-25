@@ -19,7 +19,6 @@
     add_action( 'wp_enqueue_scripts', 'marcostheme_add_theme_scripts' );
 
 
-
     function marcostheme_setup() {
         // featured image support
         if ( function_exists( 'add_theme_support' ) ) {
@@ -32,6 +31,22 @@
     }
     
     add_action('after_setup_theme', 'marcostheme_setup');
+
+
+    function marcostheme_widgets() {
+        register_sidebar(
+            array(
+                'id' => 'widgets-right',
+                'name' => __('Right Sidebar'),
+                'description' => __('Arrastra lo que quieras...'),
+                'before_widget' => '<div class="card-body my-4 mt-lg-0 mb-lg-4 shadow-sm bg-white sidebar-right">',
+                'after_widget' => '</div>',
+                'before_title' => '<h4 class="card-title text-center h5">',
+                'after_title' => '</h4><hr>'
+            )
+        );
+    }
+    add_action('widgets_init', 'marcostheme_widgets');
 
     function marcostheme_register_my_menus() {
         register_nav_menus(
