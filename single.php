@@ -35,14 +35,24 @@
                     <hr>
                     <div class="row">
                         <div class="col text-center">
-                            <small class="badge badge-info"><?php the_tags(' '); ?></small>
+                            <i class="fas fa-tags"></i> <?php the_tags(' '); ?>
                         </div>
                         <div class="col text-center">
-                            <span>Compartir: </span>
-                            <a href="#" class="text-info mr-1"><i class="fab fa-github"></i></a>
-                            <a href="#" class="text-info mr-1"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="text-info mr-1"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-info"><i class="fab fa-linkedin"></i></a>
+                            <?php 
+                                /* Social Share Buttons template for Wordpress
+                                * By Daan van den Bergh 
+                                */ 
+                                $postUrl = 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; 
+                            ?>
+                            <section class="sharing-box content-margin content-background clearfix">
+                                <div class="share-button-wrapper">
+                                    <span class="mr-2">Comparte el conocimiento: </span>
+                                    <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $postUrl; ?>&text=<?php echo the_title(); ?>&via=<?php the_author_meta( 'twitter' ); ?>" title="Tweet this"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $postUrl; ?>" title="Comparte en Facebook"><i class="fab fa-facebook"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo $postUrl; ?>" title="Comparte en Linkedin"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                                
+                            </section>
                         </div>
                     </div>
                 </article>

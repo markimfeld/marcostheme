@@ -1,6 +1,4 @@
-<div class="col ml-2">
-    <h3 class="h1">Comentarios: <?php comments_number( 'No hay comentarios.', 'Un comentario', '% comentarios' ); ?></h3>
-</div>
+<p class="col ml-2 py-0 my-0 small font-weight-bold"><i class="fas fa-comments mr-1"></i> <?php comments_number( 'No hay comentarios.', 'Un comentario', '<span class="badge badge-info p-1">%</span> pensamientos' ); ?></h3>
 <!-- Comments Form -->
 <?php comment_form(); ?>
 <!-- / Comments Form -->
