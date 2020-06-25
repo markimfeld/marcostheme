@@ -21,10 +21,10 @@
             ?>
         </p>
         <p>
-            <a href="#" class="text-info mr-1"><i class="fab fa-github"></i></a>
-            <a href="#" class="text-info mr-1"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="text-info mr-1"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-info"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/markimfeld" target="_blank" class="text-info mr-1"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCr-jpD49pJrsMy6B0QxXgCA?view_as=subscriber" target="_blank" class="text-info mr-1"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/marcosimfeld/" target="_blank" class="text-info mr-1"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/marcos-imfeld-256166151/?locale=es_ES" class="text-info" target="_blank"><i class="fab fa-linkedin"></i></a>
         </p>
     </div>
 </div>
