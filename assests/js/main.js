@@ -32,7 +32,7 @@ for( ul of sidebarRightUl) {
 const sidebarRightCategoriesLi = document.querySelectorAll('.sidebar-right ul li');
 for ( li of sidebarRightCategoriesLi) {
     li.classList.remove('cat-item'); 
-    li.classList.add('list-group-item'); 
+    li.classList.add('list-group-item', 'rounded-0'); 
 }
 
 });

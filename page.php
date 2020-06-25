@@ -9,12 +9,12 @@
             <?php get_template_part('template-parts/content', 'userinfo') ?>
 
             <div class="row shadow-sm bg-white py-3">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <section class="col">
+                <section class="col">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <h1 class="text-center"><?php the_title(); ?></h1>
-                        <p><?php the_content(); ?></p>
-                    </section>
-                <?php endwhile; endif; ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; endif; ?>
+                </section>
             </div>
             <div class="container-fluid">
                 <div class="col d-flex justify-content-center">
